@@ -4,8 +4,20 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
+	var wavesurfer = WaveSurfer.create({
+    container: '#waveform',
+    waveColor: 'violet',
+    progressColor: 'purple'
+});
+
+
+wavesurfer.load('/audio/test1.mp3');
+
 (function($) {
 
+
+	
 	var	$window = $(window),
 		$body = $('body');
 
